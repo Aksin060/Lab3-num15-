@@ -1,0 +1,15 @@
+import math
+
+x = 0.5
+epsilon = 0.001
+
+term = x  
+sum_sin = term
+n = 1  
+
+while abs(term) >= epsilon:
+    term = -x*2 / ((2*n) * (2*n + 1)) 
+    sum_sin += term
+    n += 1
+    
+print(f"Seriyanın hesablanmış cəmi: {sum_sin:.6f}")
